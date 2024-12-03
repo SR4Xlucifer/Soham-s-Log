@@ -1,15 +1,17 @@
+import java.util.Scanner;
 public class Array{
     public static void main(String[] args) {
-        //Creating the array containing students marks.
-        int []marks = {24,48,69,89,94,77,67,98};
-        //Displaying student's marks.
-        for(int a=0;a<marks.length;a++){
-            System.out.println("The marks of student "+(a+1)+" is: "+marks[a]);
+        Scanner sc = new Scanner(System.in);
+        // Array to store students marks
+        int numStudents = 5;
+        int[] marks = new int[numStudents];     
+        for(int b=0; b <numStudents;b++){
+            System.out.println("Enter marks of student "+(b+1)+" : ");
+            marks[b]=sc.nextInt();
         }
-        System.out.println(" ");
         //Grading every student's marks.
         for(int i=0;i<marks.length;i++){
-            //here we use ternary operators to determine student's grades.
+            //Here we use ternary operators to determine student's grades.
             String grade = (marks[i] >= 90) ? "A+" :
             (marks[i] >= 80) ? "A" :
             (marks[i] >= 70) ? "B+" :
@@ -30,8 +32,8 @@ public class Array{
                 min=marks[j];
             }
         }
-        System.out.println("Maximum marks are: "+max);
-        System.out.println("Minimum marks are: "+min);
+        System.out.println("Highest marks are: "+max);
+        System.out.println("Lowest marks are: "+min);
         //Calculating the average score of the class.
         int sum = 0;
         for(int k=0;k<marks.length;k++){
