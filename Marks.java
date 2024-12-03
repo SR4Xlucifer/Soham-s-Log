@@ -41,5 +41,6 @@ public class Array{
         }
         int avg = sum/marks.length;
         System.out.println("The average marks for the class is: "+avg);
+        sc.close();
     }
 }
