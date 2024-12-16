@@ -1,6 +1,5 @@
 import java.util.Scanner;
 public class integer {
-    @SuppressWarnings("ConvertToTryWithResources")
     public static void main(String[] args) {
         Scanner reader = new Scanner(System.in);
         System.out.println("Write any integer whole number: ");
