@@ -1,6 +1,5 @@
 import java.util.Scanner;
 public class SimpleCalc {
-    @SuppressWarnings("ConvertToTryWithResources")
     public static void main(String[] args) {
         Scanner reader = new Scanner(System.in);
         System.out.println("Give first number: ");
